@@ -34,16 +34,16 @@ func main() {
 		if *proxyNode == *nodeID {
 			// set up proxy routing
 			for i, port := range portStrings {
-				if i == 0 {
-					hostMap[0] = "localhost:" + port
+				if i == *proxyNode {
+					hostMap[*proxyNode] = "localhost:" + port
 				} else {
 					hostMap[i] = fmt.Sprintf("localhost:%d", *proxyPort)
 				}
 			}
 		} else {
 			for i, port := range portStrings {
-				if i == 0 {
-					hostMap[0] = fmt.Sprintf("localhost:%d", *proxyPort)
+				if i == *proxyNode {
+					hostMap[*proxyNode] = fmt.Sprintf("localhost:%d", *proxyPort)
 				} else {
 					hostMap[i] = "localhost:" + port
 				}
