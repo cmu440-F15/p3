@@ -40,10 +40,10 @@ To simply check that your code compiles (i.e. without creating the binaries),
 you can use the `go build` subcommand to compile an individual package as shown below:
 
 ```bash
-# Build/compile the "tribserver" package.
+# Build/compile the "paxos" package.
 go build path/to/paxos
 
-# A different way to build/compile the "tribserver" package.
+# A different way to build/compile the "paxos" package.
 go build github.com/cmu440-F15/paxos
 ```
 
