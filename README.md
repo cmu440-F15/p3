@@ -93,11 +93,11 @@ If you have other questions about the testing policy please don't hesitate to as
 
 ### Submitting to Autolab
 
-To submit your code to Autolab, create a `p3.tar` file containing your implementation as follows:
+To submit your code to Autolab, create a `paxosapp.tar` file containing your implementation as follows:
 
 ```sh
-cd $GOPATH
-tar -cvf p3.tar src/
+cd $GOPATH/src/github.com/cmu440-F15/
+tar -cvf paxosapp.tar paxosapp/
 ```
 
 In order for us to test your Paxos implementation, you should maintain the same directory structure and
