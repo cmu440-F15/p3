@@ -15,7 +15,7 @@ type paxosNode struct {
 // hostMap is a map from node IDs to their hostports, numNodes is the number
 // of nodes in the ring, replace is a flag which indicates whether this node
 // is a replacement for a node which failed.
-func NewPaxosNode(myHostPort string, hostMap map[int]string, numNodes, srvId, numRetries int, replace bool) (PaxosNode, error) {
+func NewPaxosNode(myHostPort string, hostMap map[int]string, numNodes, srvId, numRetries int, timeoutseconds int, replace bool) (PaxosNode, error) {
 	return nil, errors.New("not implemented")
 }
 
