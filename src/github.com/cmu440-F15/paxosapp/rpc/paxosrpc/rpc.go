@@ -4,7 +4,7 @@ package paxosrpc
 type RemotePaxosNode interface {
 	// Propose initializes proposing a value for a key, and replies with the
 	// value that was committed for that key. Propose should not return until
-	// a value has been committed, or 20 seconds have passed.
+	// a value has been committed, or 15 seconds have passed.
 	Propose(args *ProposeArgs, reply *ProposeReply) error
 
 	// GetValue looks up the value for a key, and replies with the value or with
